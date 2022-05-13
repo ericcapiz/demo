@@ -75,11 +75,11 @@
 .and-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .verticle-line{
     border-left: 2px solid #E9E9E9;
+    margin-left: 20px;
     height: 80px;
 }
 
@@ -87,4 +87,43 @@
     font-family: Prata;
     font-size: 65px;
     color:#FD8C94;
+}
+
+.sale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sale h1{
+    font-family: Prata;
+    font-size: 167px;
+    width:214px;
+    height:226px;
+    color:#464646
+}
+
+.percent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.percent span{
+    font-size: 87px;
+    color:#464646;
+    font-family: Prata;
+    width: 66px;
+    height: 73px;
+}
+
+
+
+.percent p{
+    width: 66px;
+    height: 38px;
+    color:#464646;
+    font-family: Prata;
+    font-size: 28px;
 }

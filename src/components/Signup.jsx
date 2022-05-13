@@ -22,19 +22,19 @@ const Signup = () => {
             <h2>&</h2>
             <div className="verticle-line"></div>
           </div>
-          <div className="20%">
+          <div className="sale">
             <h1>20</h1>
             <div className="percent">
-              <h2>%</h2>
-              <h3>off</h3>
+              <span>%</span>
+              <p>OFF</p>
             </div>
-            <form>
-              <div className="form">
-                <input type="email" placeholder="Email Address" />
-                <button>Sign Up</button>
-              </div>
-            </form>
           </div>
+          {/* <form>
+            <div className="form">
+              <input type="email" placeholder="Email Address" />
+              <button>Sign Up</button>
+            </div>
+          </form> */}
         </div>
       </div>
     </div>
