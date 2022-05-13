@@ -9,13 +9,15 @@ const Signup = () => {
           <div className="x">X</div>
         </div>
         <div className="card-info">
+          <div className="verticle">
+            <div className="v1"></div>
+            <div className="v"></div>
+            <div className="v1"></div>
+          </div>
           <div className="title">
-            <div className="verticle-line"></div>
-            <div className="verticle-line"></div>
-            <div className="verticle-line"></div>
             <h1>Get Your Style On</h1>
           </div>
-          <div className="and-div">
+          <div className="and-container">
             <div className="verticle-line"></div>
             <h2>&</h2>
             <div className="verticle-line"></div>
