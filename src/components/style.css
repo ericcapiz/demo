@@ -162,7 +162,6 @@ input {
     color: #464646;
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
-    /* font: bold; */
   }
 
   button{
@@ -181,3 +180,112 @@ input {
     border-bottom: 3px solid #FD8C94;
     font: bold;
   }
+
+  @media (max-width: 400px) {
+    
+    .card-container{
+        width: 350px;
+        height: 546px;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    .x-div{
+        top: 15px;
+        left: 310px;
+    }
+    
+    .x{
+        font-size: 25px;
+    }
+
+    .card-info{
+        flex-direction: column;
+    }
+    
+    .verticle{
+        display: none;
+    }
+
+    .title{
+        width: 247px;
+        height: 120px;
+    }
+    
+    .title h1{
+        margin-top: 350px;
+        font-size: 30px;
+        letter-spacing: 9px;
+        word-spacing: 0;
+        justify-content: center;
+    }
+    
+    .and-container{
+        flex-direction: row;
+    }
+    
+    .and-container h2{
+        margin: 0 50px;
+    }
+    
+    .verticle-line{
+        margin-left: 0;
+        transform: rotate(90deg);
+    }
+    
+    .sale{
+        display: flex;
+        padding: 0;
+        width: 350px;
+        height:195px;
+    }
+    
+    .sale h1{
+        font-size: 144px;
+    }
+    
+    .percent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .percent span{
+        font-size: 73px;
+        color:#464646;
+        font-family: 'Prata', serif;
+        width: 66px;
+        height: 73px;
+    }
+
+    .percent p{
+        font-size: 23px;
+    }
+    
+    .form{
+        flex-direction: column;
+        margin: 0 30px;
+        bottom: 20px;
+        left:0
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+    ::-ms-input-placeholder { 
+        text-align: center;
+    }
+      
+    ::placeholder {
+        text-align: center;
+    }
+
+    .border-btn{
+        margin-top: 35px;
+        border: 1px solid #FD8C94;
+        font: bold;
+        text-align: center;
+        padding:10px;
+      }
+
+
+}
