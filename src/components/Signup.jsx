@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 const Signup = () => {
+  const [email, setEmail] = useState();
+
   return (
     <div className="container">
       <div className="card-container">
@@ -29,13 +31,21 @@ const Signup = () => {
               <p>OFF</p>
             </div>
           </div>
-          {/* <form>
-            <div className="form">
-              <input type="email" placeholder="Email Address" />
-              <button>Sign Up</button>
-            </div>
-          </form> */}
         </div>
+        <form className="form">
+          <input
+            required
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            placeholder="Email Address"
+          />
+          <div className="border-btn">
+            <button disabled={!email} onClick={() => console.log("clicked")}>
+              Sign Up
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

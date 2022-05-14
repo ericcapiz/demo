@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .card-container{
@@ -62,7 +63,7 @@
 }
 
 .title h1{
-    font-family: Prata;
+    font-family: 'Prata', serif;
     font-size: 65px;
     color: #464646;
     width: 208px;
@@ -84,7 +85,7 @@
 }
 
 .and-container h2{
-    font-family: Prata;
+    font-family: 'Prata', serif;
     font-size: 65px;
     color:#FD8C94;
 }
@@ -97,7 +98,7 @@
 }
 
 .sale h1{
-    font-family: Prata;
+    font-family: 'Prata', serif;
     font-size: 167px;
     width:214px;
     height:226px;
@@ -107,13 +108,12 @@
 .percent{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .percent span{
     font-size: 87px;
     color:#464646;
-    font-family: Prata;
+    font-family: 'Prata', serif;
     width: 66px;
     height: 73px;
 }
@@ -124,6 +124,60 @@
     width: 66px;
     height: 38px;
     color:#464646;
-    font-family: Prata;
+    font-family: 'Prata', serif;
     font-size: 28px;
 }
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    position: relative;
+    bottom: 120px;
+    left: 150px
+}
+
+input {
+    outline: 0;
+    border-width: 0 0 3px;
+    border-color: #464646;
+    margin-right: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #464646;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font: bold;
+  }
+  
+  :-ms-input-placeholder { 
+    color: #464646;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font: bold;
+  }
+  
+  ::placeholder {
+    color: #464646;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    /* font: bold; */
+  }
+
+  button{
+    background-color: Transparent;
+    border:none;
+    cursor:pointer;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    color: #FD8C94;
+    
+   
+  }
+
+  .border-btn{
+      
+    border-bottom: 3px solid #FD8C94;
+    font: bold;
+  }
