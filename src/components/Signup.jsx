@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import Confirmation from "./Confirmation";
+import { Modal } from "@material-ui/core";
 import "./style.css";
 
 const Signup = () => {
   const [email, setEmail] = useState();
+  const [openConfirm, setOpenConfirm] = useState(false);
+
+  const handleOpenConfirm = () => setOpenConfirm(true);
+  const handleCloseConfirm = () => setOpenConfirm(false);
 
   return (
     <div className="container">
@@ -32,20 +38,25 @@ const Signup = () => {
             </div>
           </div>
         </div>
-        <form className="form">
+        <div className="form">
           <input
-            required
             type="email"
+            required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder="Email Address"
           />
           <div className="border-btn">
-            <button onClick={!email ? null : () => alert("clicked")}>
+            <button disabled={!email} onClick={handleOpenConfirm}>
               Sign Up
             </button>
+            <Modal open={openConfirm}>
+              <div onClick={handleCloseConfirm}>
+                <Confirmation />
+              </div>
+            </Modal>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
