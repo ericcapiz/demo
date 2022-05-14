@@ -1,13 +1,15 @@
 import React from "react";
 import "./style.css";
 
-const Confirmation = () => {
+const Confirmation = ({ handleCloseConfirm }) => {
   return (
     <div className="container">
       <div className="confirm-container">
         <div className="confirm-card">
           <div className="x-div">
-            <div className="x">X</div>
+            <div className="x" onClick={handleCloseConfirm}>
+              X
+            </div>
           </div>
           <div className="confirm-info">
             <div className="confirm-title">

@@ -51,8 +51,8 @@ const Signup = () => {
               Sign Up
             </button>
             <Modal open={openConfirm}>
-              <div onClick={handleCloseConfirm}>
-                <Confirmation />
+              <div>
+                <Confirmation handleCloseConfirm={handleCloseConfirm} />
               </div>
             </Modal>
           </div>
