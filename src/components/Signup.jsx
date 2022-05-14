@@ -41,7 +41,7 @@ const Signup = () => {
             placeholder="Email Address"
           />
           <div className="border-btn">
-            <button disabled={!email} onClick={() => console.log("clicked")}>
+            <button onClick={!email ? null : () => alert("clicked")}>
               Sign Up
             </button>
           </div>
